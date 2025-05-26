@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Slab", sans-serif;
+  background-color: #E3F2FD;
+  color: #49393B;
+  display: flex;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f8c537;
+  color: #49393B;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+.sidebar ul {
+  list-style: none;
+}
+.sidebar ul li {
+  margin: 1rem 0;
+}
+.sidebar ul li a {
+  color: #49393B;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  display: block;
+  transition: 0.5s;
+}
+.sidebar ul li a:hover {
+  background-color: #E3F2FD;
+  color: #f8c537;
+}
+.sidebar ul li a img {
+  width: 80px;
+  height: 80px;
+  transition: 0.5s;
+  background-color: #f8c537;
+}
+.sidebar ul li a img:hover {
+  transform: scale(1.1);
+}
+
+main {
+  margin-left: 200px;
+  width: 100%;
+}
+
+.hero {
+  background-color: #307351;
+  color: #E3F2FD;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.hero h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+
+.intro, .features {
+  margin: 2rem 0;
+}
+.intro h2, .intro h3, .features h2, .features h3 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #307351;
+}
+.intro p, .features p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.feature-box {
+  background-color: #7D82B8;
+  color: #E3F2FD;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #49393B;
+  color: #E3F2FD;
+  text-align: center;
+  padding: 1rem;
+}
+
+.homeIcon:hover {
+  background-color: #f8c537;
+}
+
+/*# sourceMappingURL=style.css.map */
