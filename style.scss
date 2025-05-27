@@ -1,9 +1,9 @@
-// VARIABLES
 $yellow: #f8c537;
-$green: #307351;
+$green: #339b67;
 $white: #E3F2FD;
 $brown: #49393B;
-$gray: #7D82B8;
+$gray: #53567c;
+$black: #36454F;
 $titleFont: 'Bebas Neue', sans-serif;
 $textFont: 'Roboto Slab', sans-serif;
 
@@ -16,9 +16,9 @@ $textFont: 'Roboto Slab', sans-serif;
 
 body {
   font-family: $textFont;
-  background-color: $white;
-  color: $brown;
-  display: flex;
+  background-color: $black;
+  color: $white;
+  overflow-x: hidden;
 }
 
 .container {
@@ -36,8 +36,6 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  display: flex;
-  flex-direction: column;
   padding-top: 2rem;
 
   ul {
@@ -58,16 +56,10 @@ body {
         &:hover {
           background-color: $white;
           color: $yellow;
+          transform: translateX(15px);
+          border-radius: 5px;
         }
-        img {
-            width: 80px;
-            height: 80px;
-            transition: 0.5s;
-            background-color: $yellow;
-            &:hover{
-                transform: scale(1.1);
-            }
-        }
+       
       }
     }
   }
@@ -118,8 +110,8 @@ main {
 }
 
 footer {
-  background-color: $brown;
-  color: $white;
+  background-color: $yellow;
+  color: $brown;
   text-align: center;
   padding: 1rem;
 }
@@ -128,9 +120,31 @@ footer {
     background-color: $yellow;
 }
 
-.homeIcon{
-  img{
+.homeIcon {
+  img {
+    margin-left: 50px;
     width: 80px;
     height: 80px;
+    background-color: $yellow;
+    animation: spin 2s linear infinite;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
   }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.chosen {
+  background-color: $white;
+  color: $yellow;
 }

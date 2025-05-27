@@ -6,9 +6,9 @@
 
 body {
   font-family: "Roboto Slab", sans-serif;
-  background-color: #E3F2FD;
-  color: #49393B;
-  display: flex;
+  background-color: #36454F;
+  color: #E3F2FD;
+  overflow-x: hidden;
 }
 
 .container {
@@ -25,8 +25,6 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  display: flex;
-  flex-direction: column;
   padding-top: 2rem;
 }
 .sidebar ul {
@@ -47,15 +45,8 @@ body {
 .sidebar ul li a:hover {
   background-color: #E3F2FD;
   color: #f8c537;
-}
-.sidebar ul li a img {
-  width: 80px;
-  height: 80px;
-  transition: 0.5s;
-  background-color: #f8c537;
-}
-.sidebar ul li a img:hover {
-  transform: scale(1.1);
+  transform: translateX(15px);
+  border-radius: 5px;
 }
 
 main {
@@ -64,7 +55,7 @@ main {
 }
 
 .hero {
-  background-color: #307351;
+  background-color: #339b67;
   color: #E3F2FD;
   text-align: center;
   padding: 4rem 2rem;
@@ -82,7 +73,7 @@ main {
 }
 .intro h2, .intro h3, .features h2, .features h3 {
   font-family: "Bebas Neue", sans-serif;
-  color: #307351;
+  color: #339b67;
 }
 .intro p, .features p {
   font-size: 1rem;
@@ -90,7 +81,7 @@ main {
 }
 
 .feature-box {
-  background-color: #7D82B8;
+  background-color: #53567c;
   color: #E3F2FD;
   padding: 1rem;
   margin: 1rem 0;
@@ -98,8 +89,8 @@ main {
 }
 
 footer {
-  background-color: #49393B;
-  color: #E3F2FD;
+  background-color: #f8c537;
+  color: #49393B;
   text-align: center;
   padding: 1rem;
 }
@@ -109,8 +100,28 @@ footer {
 }
 
 .homeIcon img {
+  margin-left: 50px;
   width: 80px;
   height: 80px;
+  background-color: #f8c537;
+  animation: spin 2s linear infinite;
+}
+.homeIcon img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.chosen {
+  background-color: #E3F2FD;
+  color: #f8c537;
 }
 
 /*# sourceMappingURL=style.css.map */
