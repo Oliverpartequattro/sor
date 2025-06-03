@@ -9,6 +9,8 @@ body {
   background-color: #36454F;
   color: #E3F2FD;
   overflow-x: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 .container {
@@ -604,6 +606,16 @@ button:hover {
   object-fit: cover;
 }
 
+.glow-on-hover:hover h3, .glow-on-hover:hover p, .glow-on-hover:hover .feature-content, .glow-on-hover:hover div,
+.glow-on-hover:focus h3,
+.glow-on-hover:focus p,
+.glow-on-hover:focus .feature-content,
+.glow-on-hover:focus div {
+  text-shadow: 0 0 12px #f8c537, 0 0 24px rgb(249.7246376812, 211.2898550725, 104.2753623188), 0 0 36px rgb(251.4492753623, 225.5797101449, 153.5507246377);
+  color: rgb(249.7246376812, 211.2898550725, 104.2753623188) !important;
+  transition: text-shadow 0.2s, color 0.2s;
+}
+
 .kultura-intro {
   margin-bottom: 3.5em;
 }
@@ -828,6 +840,61 @@ button:hover {
   }
   100% {
     transform: rotate(-10deg) scale(1);
+  }
+}
+.sor-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+.sor-bg-text {
+  position: absolute;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.2rem;
+  color: rgba(248, 197, 55, 0.12);
+  font-weight: bold;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.18;
+  text-shadow: 0 0 8px #f8c537, 0 0 2px #339b67;
+  animation: sor-bg-float 12s linear infinite;
+}
+
+@keyframes sor-bg-float {
+  0% {
+    transform: translateY(0) rotate(-8deg);
+  }
+  50% {
+    transform: translateY(12px) rotate(8deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-8deg);
+  }
+}
+.spin-text-header {
+  display: inline-block;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.1rem;
+  color: #f8c537;
+  margin: 0 0.5rem;
+  text-shadow: 0 0 10px #f8c537, 0 0 20px #339b67;
+  animation: spin-text-header 2.5s linear infinite;
+  vertical-align: middle;
+  pointer-events: none;
+  user-select: none;
+}
+
+@keyframes spin-text-header {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
   }
 }
 
