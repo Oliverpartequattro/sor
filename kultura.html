@@ -21,62 +21,77 @@
 
   <header class="hero shadow">
     <div class="container">
-      <h1 style="display: flex; align-items: center; justify-content: center; gap: 1.5rem;">
-        <img src="img/beer.png" class="spin-icon reverse-spin" style="width:48px; height:48px; box-shadow:none;">
+      <h1 class="header-flex">
+        <img src="img/beer.png" class="spin-icon reverse-spin header-icon">
         <span class="glow">Sörkultúra</span>
-        <img src="img/beer.png" class="spin-icon" style="width:48px; height:48px; box-shadow:none;">
+        <img src="img/beer.png" class="spin-icon header-icon">
       </h1>
       <p>Ismerd meg a sör körüli hagyományokat, fesztiválokat és gasztronómiai élményeket!</p>
+      <div class="header-underline-anim"><div class="header-underline-bar"></div></div>
     </div>
   </header>
 
   <div class="content shadow">
     <div class="container box">
-      <section class="intro">
-        <h2 class="underline" style="text-align:center;">A sör helye a kultúrában</h2>
-        <p>
+      <section class="kultura-intro">
+        <h2 class="underline center-text kultura-highlight">A sör helye a kultúrában</h2>
+        <p class="kultura-highlight">
           A sör nemcsak egy ital, hanem számos kultúra szerves része. Ünnepek, társasági események, hagyományok és gasztronómiai élmények kapcsolódnak hozzá világszerte. A sör összeköti az embereket, legyen szó baráti összejövetelről, fesztiválról vagy egy jó vacsoráról.
         </p>
+        <div class="kultura-img-row">
+          <img src="img/beer_festival.jpg" alt="Sörfesztivál" class="kultura-img">
+          <img src="img/beer_food.jpg" alt="Sör és étel" class="kultura-img">
+          <img src="img/beer_tradition.jpg" alt="Sör hagyomány" class="kultura-img">
+        </div>
       </section>
 
-      <section class="features">
-        <div class="feature-box shadow">
-          <div style="display: flex; align-items: center; gap: 2rem;">
-            <img src="img/beer_festival.jpg" style="border-radius: 10px;">
-            <div>
-              <h3 style="text-align:center;">Sörfesztiválok</h3>
-              <div class="feature-content open">
-                <p>
-                  Világszerte rendeznek sörfesztiválokat, ahol a látogatók megkóstolhatják a különböző sörfajtákat, megismerhetik a helyi hagyományokat és részt vehetnek színes programokon. A legismertebb a müncheni Oktoberfest, de Magyarországon is egyre több sörfesztivál várja az érdeklődőket.
-                </p>
-              </div>
+      <section class="features kultura-features kultura-gap">
+        <div class="kultura-feature-box shadow glow-on-hover bg-gray">
+          <img src="img/beer_festival.jpg" class="kultura-feature-img" alt="Sörfesztivál">
+          <div class="kultura-feature-content">
+            <div class="kultura-feature-title">Sörfesztiválok</div>
+            <div class="kultura-feature-text">
+              Világszerte rendeznek sörfesztiválokat, ahol a látogatók megkóstolhatják a különböző sörfajtákat, megismerhetik a helyi hagyományokat és részt vehetnek színes programokon. A legismertebb a <span class="glow">müncheni Oktoberfest</span>, de Magyarországon is egyre több sörfesztivál várja az érdeklődőket. Ezek az események a közösségi élmény, a zene, a gasztronómia és a jókedv ünnepei.
             </div>
           </div>
         </div>
-        <div class="feature-box shadow">
-          <div style="display: flex; align-items: center; gap: 2rem;">
-            <img src="img/beer_food.jpg" style="border-radius: 10px;">
-            <div>
-              <h3 style="text-align:center;">Sör és gasztronómia</h3>
-              <div class="feature-content open">
-                <p>
-                  A sör tökéletes kísérője lehet különböző ételeknek. A sör-étel párosítás művészete egyre népszerűbb: a világos sörök jól illenek könnyű fogásokhoz, míg a barna vagy stout sörök kiválóak sült húsokhoz, sajtokhoz vagy akár desszertekhez is.
-                </p>
-              </div>
+        <div class="kultura-feature-box shadow glow-on-hover bg-gray reverse">
+          <img src="img/beer_food.jpg" class="kultura-feature-img" alt="Sör és gasztronómia">
+          <div class="kultura-feature-content">
+            <div class="kultura-feature-title">Sör és gasztronómia</div>
+            <div class="kultura-feature-text">
+              A sör tökéletes kísérője lehet különböző ételeknek. A <span class="glow">sör-étel párosítás</span> művészete egyre népszerűbb: a világos sörök jól illenek könnyű fogásokhoz, míg a barna vagy stout sörök kiválóak sült húsokhoz, sajtokhoz vagy akár desszertekhez is. Egy jól megválasztott sör kiemeli az étel ízét, és fordítva.
             </div>
           </div>
         </div>
-        <div class="feature-box shadow">
-          <div style="display: flex; align-items: center; gap: 2rem;">
-            <img src="img/beer_tradition.jpg" style="border-radius: 10px;">
-            <div>
-              <h3 style="text-align:center;">Sörkészítés hagyományai</h3>
-              <div class="feature-content open">
-                <p>
-                  A sörkészítés évszázados hagyományokra épül, amelyek generációról generációra öröklődnek. Minden régiónak megvannak a maga sörfőzési szokásai, alapanyagai és különleges receptjei, amelyek a helyi kultúra részévé váltak.
-                </p>
-              </div>
+        <div class="kultura-feature-box shadow glow-on-hover bg-gray">
+          <img src="img/beer_tradition.jpg" class="kultura-feature-img" alt="Sörkészítés hagyományai">
+          <div class="kultura-feature-content">
+            <div class="kultura-feature-title">Sörkészítés hagyományai</div>
+            <div class="kultura-feature-text">
+              A sörkészítés évszázados hagyományokra épül, amelyek generációról generációra öröklődnek. Minden régiónak megvannak a maga <span class="glow">sörfőzési szokásai</span>, alapanyagai és különleges receptjei, amelyek a helyi kultúra részévé váltak. A kézműves sörfőzdék ma is őrzik és újraértelmezik ezeket a hagyományokat.
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="kultura-toast-section">
+        <h2 class="underline center-text kultura-toast-title">Sörös koccintás világszerte</h2>
+        <p class="kultura-toast-text">
+          Tudtad, hogy minden országban másképp koccintanak sörrel? Néhány példa:
+        </p>
+        <div class="kultura-toast-row">
+          <div class="kultura-toast-box toast-yellow">
+            <span class="glow">Magyarország:</span> Egészségedre!
+          </div>
+          <div class="kultura-toast-box toast-green">
+            <span class="glow">Németország:</span> Prost!
+          </div>
+          <div class="kultura-toast-box toast-brown">
+            <span class="glow">Anglia:</span> Cheers!
+          </div>
+          <div class="kultura-toast-box toast-yellow">
+            <span class="glow">Csehország:</span> Na zdraví!
           </div>
         </div>
       </section>

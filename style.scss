@@ -272,12 +272,12 @@ footer {
 .feature-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-out, padding 0.3s;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   padding: 0 0;
 }
 
 .feature-content.open {
-  max-height: 300px;
+  max-height: 800px;
   padding: 1rem 0;
 }
 
@@ -600,17 +600,14 @@ button {
 }
 
 .kultura-feature-title {
-  font-size: 1.7rem;
-  color: $yellow;
-  font-family: $titleFont;
-  margin-bottom: 0.7rem;
-  letter-spacing: 0.02em;
+  font-size: 2.1em;
+  color: #f8c537;
+  text-shadow: 0 0 12px #339b67;
 }
 
 .kultura-feature-text {
-  font-size: 1.13rem;
-  color: $white;
-  line-height: 1.7;
+  font-size: 1.25em;
+  color: #fffbe6;
 }
 
 @media (max-width: 900px) {
@@ -625,4 +622,75 @@ button {
   .kultura-feature-title {
     text-align: center;
   }
+}
+
+// Header flex for hero h1
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.header-icon {
+  width: 48px;
+  height: 48px;
+  box-shadow: none;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.feature-flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.feature-img {
+  border-radius: 10px;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+// Glow effect for feature-box text on hover
+.glow-on-hover:hover,
+.glow-on-hover:focus {
+  h3, p, .feature-content, div {
+    text-shadow:
+      0 0 12px $yellow,
+      0 0 24px lighten($yellow, 10%),
+      0 0 36px lighten($yellow, 20%);
+    color: lighten($yellow, 10%) !important;
+    transition: text-shadow 0.2s, color 0.2s;
+  }
+}
+
+// KULTURA PAGE CLASSES
+.kultura-intro {
+  margin-bottom: 3.5em;
+}
+.kultura-highlight {
+  font-size: 1.5em;
+  color: #fffbe6;
+  text-align: center;
+  margin-bottom: 2em;
+  text-shadow: 0 0 8px #49393B;
+}
+.kultura-img-row {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-bottom: 2em;
+}
+.kultura-img {
+  width: 220px;
+  border-radius: 18px;
+  box-shadow: 0 0 24px #f8c537;
+}
+.kultura-gap {
+  margin-top: 2em;
+}
+.bg-gray {
+  background: $gray !important;
 }

@@ -237,12 +237,12 @@ footer {
 .feature-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-out, padding 0.3s;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   padding: 0 0;
 }
 
 .feature-content.open {
-  max-height: 300px;
+  max-height: 800px;
   padding: 1rem 0;
 }
 
@@ -550,17 +550,14 @@ button:hover {
 }
 
 .kultura-feature-title {
-  font-size: 1.7rem;
+  font-size: 2.1em;
   color: #f8c537;
-  font-family: "Bebas Neue", sans-serif;
-  margin-bottom: 0.7rem;
-  letter-spacing: 0.02em;
+  text-shadow: 0 0 12px #339b67;
 }
 
 .kultura-feature-text {
-  font-size: 1.13rem;
-  color: #E3F2FD;
-  line-height: 1.7;
+  font-size: 1.25em;
+  color: #fffbe6;
 }
 
 @media (max-width: 900px) {
@@ -575,6 +572,78 @@ button:hover {
   .kultura-feature-title {
     text-align: center;
   }
+}
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.header-icon {
+  width: 48px;
+  height: 48px;
+  box-shadow: none;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.feature-flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.feature-img {
+  border-radius: 10px;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.glow-on-hover:hover h3, .glow-on-hover:hover p, .glow-on-hover:hover .feature-content, .glow-on-hover:hover div,
+.glow-on-hover:focus h3,
+.glow-on-hover:focus p,
+.glow-on-hover:focus .feature-content,
+.glow-on-hover:focus div {
+  text-shadow: 0 0 12px #f8c537, 0 0 24px rgb(249.7246376812, 211.2898550725, 104.2753623188), 0 0 36px rgb(251.4492753623, 225.5797101449, 153.5507246377);
+  color: rgb(249.7246376812, 211.2898550725, 104.2753623188) !important;
+  transition: text-shadow 0.2s, color 0.2s;
+}
+
+.kultura-intro {
+  margin-bottom: 3.5em;
+}
+
+.kultura-highlight {
+  font-size: 1.5em;
+  color: #fffbe6;
+  text-align: center;
+  margin-bottom: 2em;
+  text-shadow: 0 0 8px #49393B;
+}
+
+.kultura-img-row {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-bottom: 2em;
+}
+
+.kultura-img {
+  width: 220px;
+  border-radius: 18px;
+  box-shadow: 0 0 24px #f8c537;
+}
+
+.kultura-gap {
+  margin-top: 2em;
+}
+
+.bg-gray {
+  background: #53567c !important;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -21,10 +21,10 @@
 
   <header class="hero shadow">
     <div class="container">
-      <h1 style="display: flex; align-items: center; justify-content: center; gap: 1.5rem;">
-        <img src="img/beer.png" class="spin-icon reverse-spin" style="width:48px; height:48px; box-shadow:none;">
+      <h1 class="header-flex">
+        <img src="img/beer.png" class="spin-icon reverse-spin header-icon">
         <span class="glow">Sörfajták</span>
-        <img src="img/beer.png" class="spin-icon" style="width:48px; height:48px; box-shadow:none;">
+        <img src="img/beer.png" class="spin-icon header-icon">
       </h1>
       <p>Fedezd fel a sörök sokszínű világát!</p>
     </div>
@@ -33,15 +33,15 @@
   <div class="content shadow">
     <div class="container box">
       <section class="intro">
-        <h2 class="underline" style="text-align:center;">Különböző típusok</h2>
+        <h2 class="underline center-text">Különböző típusok</h2>
         <p>A sörök világa rendkívül gazdag és változatos. Az alábbiakban részletesen bemutatjuk a legismertebb sörtípusokat, azok jellemzőit, eredetét és különlegességeit. Minden típusnál egy-egy kép is segít elképzelni, milyen is lehet az adott sör – a képek csak illusztrációk.</p>
         <img src="img/beertypes.webp">
       </section>
 
       <section class="features">
-        <div class="feature-box shadow" onclick="toggleFeature(this)">
-          <div style="display: flex; align-items: center; gap: 2rem;">
-            <img src="img/lager.webp" style="border-radius: 10px; width: 120px; height: 120px; object-fit: cover;">
+        <div class="feature-box shadow glow-on-hover" onclick="toggleFeature(this)">
+          <div class="feature-flex">
+            <img src="img/lager.webp" class="feature-img">
             <div>
               <h3 style="text-align:center;">Világos sör (Lager)</h3>
               <div class="feature-content">
@@ -52,13 +52,13 @@
                 </p>
               </div>
             </div>
-            <img src="img/freshbeer.jfif" style="border-radius: 10px; width: 120px; height: 120px; object-fit: cover;">
+            <img src="img/freshbeer.jfif" class="feature-img">
           </div>
         </div>
 
-        <div class="feature-box shadow" onclick="toggleFeature(this)">
-          <div style="display: flex; align-items: center; gap: 2rem;">
-            <img src="img/brownale.jfif" style="border-radius: 10px; width: 120px; height: 120px; object-fit: cover;">
+        <div class="feature-box shadow glow-on-hover" onclick="toggleFeature(this)">
+          <div class="feature-flex">
+            <img src="img/brownale.jfif" class="feature-img">
             <div>
               <h3 style="text-align:center;">Barna sör (Brown Ale)</h3>
               <div class="feature-content">
@@ -69,13 +69,13 @@
                 </p>
               </div>
             </div>
-            <img src="img/malt.jfif" style="border-radius: 10px; width: 120px; height: 120px; object-fit: cover;">
+            <img src="img/malt.jfif" class="feature-img">
           </div>
         </div>
 
-        <div class="feature-box shadow" onclick="toggleFeature(this)">
-          <div style="display: flex; align-items: center; gap: 2rem;">
-            <img src="img/ipa.jfif" style="border-radius: 10px; width: 120px; height: 120px; object-fit: cover;">
+        <div class="feature-box shadow glow-on-hover" onclick="toggleFeature(this)">
+          <div class="feature-flex">
+            <img src="img/ipa.jfif" class="feature-img">
             <div>
               <h3 style="text-align:center;">IPA (India Pale Ale)</h3>
               <div class="feature-content">
@@ -86,13 +86,13 @@
                 </p>
               </div>
             </div>
-            <img src="img/hop.jfif" style="border-radius: 10px; width: 120px; height: 120px; object-fit: cover;">
+            <img src="img/hop.jfif" class="feature-img">
           </div>
         </div>
 
-        <div class="feature-box shadow" onclick="toggleFeature(this)">
-          <div style="display: flex; align-items: center; gap: 2rem;">
-            <img src="img/stout.jfif" style="border-radius: 10px; width: 120px; height: 120px; object-fit: cover;">
+        <div class="feature-box shadow glow-on-hover" onclick="toggleFeature(this)">
+          <div class="feature-flex">
+            <img src="img/stout.jfif" class="feature-img">
             <div>
               <h3 style="text-align:center;">Stout</h3>
               <div class="feature-content">
@@ -103,13 +103,13 @@
                 </p>
               </div>
             </div>
-            <img src="img/coffee.jfif" style="border-radius: 10px; width: 120px; height: 120px; object-fit: cover;">
+            <img src="img/coffee.jfif" class="feature-img">
           </div>
         </div>
 
-        <div class="feature-box shadow" onclick="toggleFeature(this)">
-          <div style="display: flex; align-items: center; gap: 2rem;">
-            <img src="img/wheat beer.jfif" style="border-radius: 10px; width: 120px; height: 120px; object-fit: cover;">
+        <div class="feature-box shadow glow-on-hover" onclick="toggleFeature(this)">
+          <div class="feature-flex">
+            <img src="img/wheat beer.jfif" class="feature-img">
             <div>
               <h3 style="text-align:center;">Búzasör (Weissbier)</h3>
               <div class="feature-content">
@@ -120,13 +120,13 @@
                 </p>
               </div>
             </div>
-            <img src="img/banana.jfif" style="border-radius: 10px; width: 120px; height: 120px; object-fit: cover;">
+            <img src="img/banana.jfif" class="feature-img">
           </div>
         </div>
 
-        <div class="feature-box shadow" onclick="toggleFeature(this)">
-          <div style="display: flex; align-items: center; gap: 2rem;">
-            <img src="img/craftbeer.jfif" style="border-radius: 10px; width: 120px; height: 120px; object-fit: cover;">
+        <div class="feature-box shadow glow-on-hover" onclick="toggleFeature(this)">
+          <div class="feature-flex">
+            <img src="img/craftbeer.jfif" class="feature-img">
             <div>
               <h3 style="text-align:center;">Kézműves sör</h3>
               <div class="feature-content">
@@ -137,13 +137,13 @@
                 </p>
               </div>
             </div>
-            <img src="img/creativebrewer.jfif" style="border-radius: 10px; width: 120px; height: 120px; object-fit: cover;">
+            <img src="img/creativebrewer.jfif" class="feature-img">
           </div>
         </div>
 
-        <div class="feature-box shadow" onclick="toggleFeature(this)">
-          <div style="display: flex; align-items: center; gap: 2rem;">
-            <img src="img/cherrybeer.jfif" style="border-radius: 10px; width: 120px; height: 120px; object-fit: cover;">
+        <div class="feature-box shadow glow-on-hover" onclick="toggleFeature(this)">
+          <div class="feature-flex">
+            <img src="img/cherrybeer.jfif" class="feature-img">
             <div>
               <h3 style="text-align:center;">Gyümölcsös sör</h3>
               <div class="feature-content">
@@ -154,7 +154,7 @@
                 </p>
               </div>
             </div>
-            <img src="img/cherry.jfif" style="border-radius: 10px; width: 120px; height: 120px; object-fit: cover;">
+            <img src="img/cherry.jfif" class="feature-img">
           </div>
         </div>
       </section>
