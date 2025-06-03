@@ -11,7 +11,7 @@
 <body>
     <nav class="sidebar">
         <ul>
-          <li class="homeIcon"><a href="index.html"> <img  src="img/beer.png" alt=""></a></li>
+          <li class="homeIcon"><a href="index.html"> <img  src="img/beer.png"></a></li>
           <li><a href="fajtak.html">Fajták</a></li>
           <li class="chosen"><a href="fozes.html">Főzés</a></li>
           <li><a href="kultura.html">Kultúra</a></li>
@@ -35,27 +35,42 @@
     </section>
 
     <section class="features container box">
-      <div class="feature-box shadow">
+      <div class="feature-box shadow" onclick="toggleFeature(this)">
         <h3>Malátázás</h3>
-        <p>A gabonát előkészítik, csíráztatják, majd szárítják, hogy kialakuljanak a sör ízét meghatározó enzimek.</p>
-        <img src="img/malting.jpg" alt="Malátázás" />
+        <div class="feature-content">
+          <p>A gabonát előkészítik, csíráztatják, majd szárítják, hogy kialakuljanak a sör ízét meghatározó enzimek.</p>
+          <img src="img/malting.jpg">
+        </div>
       </div>
-
-      <div class="feature-box shadow">
+      <div class="feature-box shadow" onclick="toggleFeature(this)">
         <h3>Komlózás</h3>
-        <p>A komló hozzáadása nemcsak az ízt, hanem a sör tartósságát is biztosítja. Ez a lépés adja a sör kesernyés karakterét.</p>
-        <img src="img/hopping.jpg" alt="Komlózás" />
+        <div class="feature-content">
+          <p>A komló hozzáadása nemcsak az ízt, hanem a sör tartósságát is biztosítja. Ez a lépés adja a sör kesernyés karakterét.</p>
+          <img src="img/hopping.jpg">
+        </div>
       </div>
-
-      <div class="feature-box shadow">
+      <div class="feature-box shadow" onclick="toggleFeature(this)">
         <h3>Erjesztés</h3>
-        <p>Az élesztő hozzáadásával a cukrok alkohollá és szén-dioxiddá alakulnak. Ez a folyamat határozza meg a sör végső ízét.</p>
-        <img src="img/fermentation.jpg" alt="Erjesztés" />
+        <div class="feature-content">
+          <p>Az élesztő hozzáadásával a cukrok alkohollá és szén-dioxiddá alakulnak. Ez a folyamat határozza meg a sör végső ízét.</p>
+          <img src="img/fermentation.jpg">
+        </div>
       </div>
     </section>
   </div>
 
   <footer>
+    <div class="container shadow">
+      <p>&copy; 2025 Sör Info. Minden jog fenntartva.</p>
+    </div>
   </footer>
+
+  <script>
+    function toggleFeature(box) {
+      if (event.target.tagName === 'A' || event.target.tagName === 'IMG') return;
+      const content = box.querySelector('.feature-content');
+      content.classList.toggle('open');
+    }
+  </script>
 </body>
 </html>

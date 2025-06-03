@@ -11,7 +11,7 @@
 <body>
   <nav class="sidebar shadow">
     <ul>
-      <li class="homeIcon"><a href="index.html"> <img src="img/beer.png" alt=""></a></li>
+      <li class="homeIcon"><a href="index.html"> <img src="img/beer.png"></a></li>
       <li class="chosen"><a href="fajtak.html">Fajták</a></li>
       <li><a href="fozes.html">Főzés</a></li>
       <li><a href="kultura.html">Kultúra</a></li>
@@ -31,26 +31,27 @@
       <div class="container box">
         <h2 class="underline">Különböző típusok</h2>
         <p>A sörök világa gazdag és változatos. Az alábbiakban néhány fontos fajtát ismerhetsz meg – kattints a címekre a részletekért!</p>
+        <img src="img/beer_types.jpg">
       </div>
     </section>
 
     <section class="features container box">
-      <div class="feature-box shadow">
-        <h3 onclick="toggleFeature(this)">Világos sör</h3>
+      <div class="feature-box shadow" onclick="toggleFeature(this)">
+        <h3>Világos sör</h3>
         <div class="feature-content">
           <p>Könnyű, frissítő és tökéletes egy nyári délutánra. Gyakran alacsonyabb alkoholtartalmú, világos arany színű.</p>
         </div>
       </div>
 
-      <div class="feature-box shadow">
-        <h3 onclick="toggleFeature(this)">Barna sör</h3>
+      <div class="feature-box shadow" onclick="toggleFeature(this)">
+        <h3>Barna sör</h3>
         <div class="feature-content">
           <p>Telt íz, karamelles és pörkölt jegyek, sötétebb színvilág. Az ínyencek egyik kedvence, főleg hidegebb időben.</p>
         </div>
       </div>
 
-      <div class="feature-box shadow">
-        <h3 onclick="toggleFeature(this)">Kézműves sör</h3>
+      <div class="feature-box shadow" onclick="toggleFeature(this)">
+        <h3>Kézműves sör</h3>
         <div class="feature-content">
           <p>Egyedi receptek alapján, kis főzdékben készül. Erőteljesebb, karakteresebb ízek, gyakran kísérletező stílusban.</p>
         </div>
@@ -65,8 +66,9 @@
   </footer>
 
   <script>
-    function toggleFeature(header) {
-      const content = header.nextElementSibling;
+    function toggleFeature(box) {
+      if (event.target.tagName === 'A' || event.target.tagName === 'IMG') return;
+      const content = box.querySelector('.feature-content');
       content.classList.toggle('open');
     }
   </script>

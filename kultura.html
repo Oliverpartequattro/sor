@@ -11,7 +11,7 @@
 <body>
     <nav class="sidebar">
         <ul>
-          <li class="homeIcon"><a href="index.html"> <img  src="img/beer.png" alt=""></a></li>
+          <li class="homeIcon"><a href="index.html"> <img  src="img/beer.png"></a></li>
           <li><a href="fajtak.html">Fajták</a></li>
           <li><a href="fozes.html">Főzés</a></li>
           <li class="chosen"><a href="kultura.html">Kultúra</a></li>
@@ -35,28 +35,42 @@
     </section>
 
     <section class="features container box">
-      <div class="feature-box shadow">
+      <div class="feature-box shadow" onclick="toggleFeature(this)">
         <h3>Sörfesztiválok</h3>
-        <p>Világszerte rendeznek sörfesztiválokat, ahol a látogatók megkóstolhatják a különböző sörfajtákat és megismerhetik a helyi hagyományokat.</p>
-        <img src="img/beer_festival.jpg" alt="Sörfesztiválok" />
+        <div class="feature-content">
+          <p>Világszerte rendeznek sörfesztiválokat, ahol a látogatók megkóstolhatják a különböző sörfajtákat és megismerhetik a helyi hagyományokat.</p>
+          <img src="img/beer_festival.jpg">
+        </div>
       </div>
-
-      <div class="feature-box shadow">
+      <div class="feature-box shadow" onclick="toggleFeature(this)">
         <h3>Sör és gasztronómia</h3>
-        <p>A sör tökéletes kísérője lehet különböző ételeknek. A párosítás művészete egyre népszerűbb a gasztronómiában.</p>
-        <img src="img/beer_food.jpg" alt="Sör és gasztronómia" />
+        <div class="feature-content">
+          <p>A sör tökéletes kísérője lehet különböző ételeknek. A párosítás művészete egyre népszerűbb a gasztronómiában.</p>
+          <img src="img/beer_food.jpg">
+        </div>
       </div>
-
-      <div class="feature-box shadow">
+      <div class="feature-box shadow" onclick="toggleFeature(this)">
         <h3>Sörkészítés hagyományai</h3>
-        <p>A sörkészítés évszázados hagyományokra épül, amelyek generációról generációra öröklődnek.</p>
-        <img src="img/beer_tradition.jpg" alt="Sörkészítés hagyományai" />
+        <div class="feature-content">
+          <p>A sörkészítés évszázados hagyományokra épül, amelyek generációról generációra öröklődnek.</p>
+          <img src="img/beer_tradition.jpg">
+        </div>
       </div>
     </section>
   </div>
 
   <footer>
-    <!-- Footer content can be added here -->
+    <div class="container shadow">
+      <p>&copy; 2025 Sör Info. Minden jog fenntartva.</p>
+    </div>
   </footer>
+
+  <script>
+    function toggleFeature(box) {
+      if (event.target.tagName === 'A' || event.target.tagName === 'IMG') return;
+      const content = box.querySelector('.feature-content');
+      content.classList.toggle('open');
+    }
+  </script>
 </body>
 </html>
