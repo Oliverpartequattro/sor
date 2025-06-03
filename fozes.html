@@ -9,15 +9,15 @@
   <link rel="icon" type="image/png" href="img/beer.png">
 </head>
 <body>
-    <nav class="sidebar">
-        <ul>
-          <li class="homeIcon"><a href="index.html"> <img  src="img/beer.png"></a></li>
-          <li><a href="fajtak.html">Fajták</a></li>
-          <li class="chosen"><a href="fozes.html">Főzés</a></li>
-          <li><a href="kultura.html">Kultúra</a></li>
-          <li><a href="kviz.html">Kvíz</a></li>
-        </ul>
-      </nav>
+  <nav class="sidebar">
+    <ul>
+      <li class="homeIcon"><a href="index.html"> <img src="img/beer.png"></a></li>
+      <li><a href="fajtak.html">Fajták</a></li>
+      <li class="chosen"><a href="fozes.html">Főzés</a></li>
+      <li><a href="kultura.html">Kultúra</a></li>
+      <li><a href="kviz.html">Kvíz</a></li>
+    </ul>
+  </nav>
 
   <header class="hero shadow">
     <div class="container">
@@ -26,41 +26,74 @@
         <span class="glow">Sörfőzés</span>
         <img src="img/beer.png" class="spin-icon" style="width:48px; height:48px; box-shadow:none;">
       </h1>
-      <p>Fedezd fel a sörkészítés művészetét!</p>
+      <p>Fedezd fel a sörkészítés művészetét lépésről lépésre!</p>
     </div>
   </header>
 
   <div class="content shadow">
-    <section class="intro">
-      <div class="container box">
-        <h2 class="underline">A sörfőzés alapjai</h2>
-        <p>A sörfőzés egy ősi mesterség, amely a víz, maláta, komló és élesztő tökéletes kombinációján alapul. Az alábbiakban bemutatjuk a folyamat főbb lépéseit.</p>
-      </div>
-    </section>
+    <div class="container box">
+      <section>
+        <h2 class="underline brewing-title-center">A sörfőzés fő lépései</h2>
+        <p class="brewing-intro">
+          A sörfőzés egy izgalmas, több lépésből álló folyamat, amely során a természet egyszerű alapanyagaiból – vízből, gabonából, komlóból és élesztőből – készül a világ egyik legkedveltebb itala. Ismerd meg a főbb lépéseket, és fedezd fel, hogyan lesz a gabonából aranyló sör!
+        </p>
 
-    <section class="features container box">
-      <div class="feature-box shadow" onclick="toggleFeature(this)">
-        <h3>Malátázás</h3>
-        <div class="feature-content">
-          <p>A gabonát előkészítik, csíráztatják, majd szárítják, hogy kialakuljanak a sör ízét meghatározó enzimek.</p>
-          <img src="img/malting.jpg">
+        <div class="brewing-step box">
+          <div class="brewing-step-number">1</div>
+          <div class="brewing-step-content">
+            <div class="brewing-step-title">Malátázás</div>
+            <div class="brewing-step-text">
+              A sörfőzés első lépése a malátázás, amikor a gabonát (általában árpát) beáztatják, csíráztatják, majd megszárítják. Ez a folyamat elősegíti a keményítő cukorrá alakulását, amely később az erjedés során alkohollá változik. A maláta színe és pörkölése meghatározza a sör végső színét és ízvilágát.
+            </div>
+          </div>
+          <img src="https://placehold.co/240x320/eee/333?text=Malátázás">
         </div>
-      </div>
-      <div class="feature-box shadow" onclick="toggleFeature(this)">
-        <h3>Komlózás</h3>
-        <div class="feature-content">
-          <p>A komló hozzáadása nemcsak az ízt, hanem a sör tartósságát is biztosítja. Ez a lépés adja a sör kesernyés karakterét.</p>
-          <img src="img/hopping.jpg">
+
+        <div class="brewing-step reverse box">
+          <div class="brewing-step-number">2</div>
+          <div class="brewing-step-content">
+            <div class="brewing-step-title">Cefrézés és szűrés</div>
+            <div class="brewing-step-text">
+              A malátát összezúzzák, majd meleg vízzel keverik össze. A keveréket különböző hőmérsékleteken tartják, hogy a keményítő cukorrá alakuljon. Ezután a cefrét leszűrik, így kapják meg a sörlé (wort) nevű édes folyadékot, amely a további főzés alapja lesz.
+            </div>
+          </div>
+          <img src="https://placehold.co/240x320/ddd/222?text=Cefrézés+és+szűrés">
         </div>
-      </div>
-      <div class="feature-box shadow" onclick="toggleFeature(this)">
-        <h3>Erjesztés</h3>
-        <div class="feature-content">
-          <p>Az élesztő hozzáadásával a cukrok alkohollá és szén-dioxiddá alakulnak. Ez a folyamat határozza meg a sör végső ízét.</p>
-          <img src="img/fermentation.jpg">
+
+        <div class="brewing-step box">
+          <div class="brewing-step-number">3</div>
+          <div class="brewing-step-content">
+            <div class="brewing-step-title">Komlózás</div>
+            <div class="brewing-step-text">
+              A sörléhez komlót adnak, majd felforralják. A komló adja a sör jellegzetes keserűségét, aromáját és tartósságát. A főzés során különböző időpontokban adagolt komlóval lehet befolyásolni a sör ízét és illatát. A komlózás után a sörlevet lehűtik.
+            </div>
+          </div>
+          <img src="https://placehold.co/240x320/ffe4b5/333?text=Komlózás">
         </div>
-      </div>
-    </section>
+
+        <div class="brewing-step reverse box">
+          <div class="brewing-step-number">4</div>
+          <div class="brewing-step-content">
+            <div class="brewing-step-title">Erjesztés</div>
+            <div class="brewing-step-text">
+              A lehűtött sörléhez élesztőt adnak, amely a cukrokat alkohollá és szén-dioxiddá alakítja. Az erjesztés lehet alsó vagy felső erjesztésű, attól függően, hogy milyen típusú sört készítenek. Ez a folyamat akár több hétig is eltarthat, és meghatározza a sör végső karakterét.
+            </div>
+          </div>
+          <img src="https://placehold.co/240x320/ccf/222?text=Erjesztés">
+        </div>
+
+        <div class="brewing-step box">
+          <div class="brewing-step-number">5</div>
+          <div class="brewing-step-content">
+            <div class="brewing-step-title">Érlelés és palackozás</div>
+            <div class="brewing-step-text">
+              Az erjesztés után a sört pihentetik, hogy letisztuljon és kialakuljon a végső ízvilága. Az érlelés során a sörben lévő zavaros részecskék leülepednek, az ízek összeérnek. Ezután a sört palackozzák vagy hordóba töltik, és már fogyasztható is!
+            </div>
+          </div>
+          <img src="https://placehold.co/240x320/eee/333?text=Érlelés+és+palackozás">
+        </div>
+      </section>
+    </div>
   </div>
 
   <footer>
@@ -68,13 +101,5 @@
       <p>&copy; 2025 Sör Info. Minden jog fenntartva.</p>
     </div>
   </footer>
-
-  <script>
-    function toggleFeature(box) {
-      if (event.target.tagName === 'A' || event.target.tagName === 'IMG') return;
-      const content = box.querySelector('.feature-content');
-      content.classList.toggle('open');
-    }
-  </script>
 </body>
 </html>
