@@ -74,6 +74,10 @@ main {
   font-size: 1.2rem;
 }
 
+.hero h1 {
+  cursor: pointer;
+}
+
 .intro h2, .intro h3, .features h2, .features h3 {
   color: #339b67 !important;
   font-family: "Bebas Neue", sans-serif;
@@ -156,12 +160,28 @@ footer {
   background-color: rgba(255, 255, 255, 0);
 }
 
+.spin-icon {
+  animation: spin 3s linear infinite;
+}
+
+.spin-icon.reverse-spin {
+  animation: spin-reverse 3s linear infinite;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes spin-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
   }
 }
 .chosen {
@@ -245,6 +265,26 @@ img:hover {
   animation: spin 3s linear infinite;
 }
 
+.spin-icon.reverse-spin {
+  animation: spin-reverse 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 button {
   background-color: #f8c537;
   color: #49393B;

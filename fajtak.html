@@ -21,7 +21,11 @@
 
   <header class="hero shadow">
     <div class="container">
-      <h1 class="underline glow">Sörfajták</h1>
+      <h1 style="display: flex; align-items: center; justify-content: center; gap: 1.5rem;">
+        <img src="img/beer.png" class="spin-icon reverse-spin" style="width:48px; height:48px; box-shadow:none;">
+        <span class="glow">Sörfajták</span>
+        <img src="img/beer.png" class="spin-icon" style="width:48px; height:48px; box-shadow:none;">
+      </h1>
       <p>Fedezd fel a sörök sokszínű világát!</p>
     </div>
   </header>
@@ -29,31 +33,129 @@
   <div class="content shadow">
     <section class="intro">
       <div class="container box">
-        <h2 class="underline">Különböző típusok</h2>
-        <p>A sörök világa gazdag és változatos. Az alábbiakban néhány fontos fajtát ismerhetsz meg – kattints a címekre a részletekért!</p>
+        <h2 class="underline" style="text-align:center;">Különböző típusok</h2>
+        <p>A sörök világa rendkívül gazdag és változatos. Az alábbiakban részletesen bemutatjuk a legismertebb sörtípusokat, azok jellemzőit, eredetét és különlegességeit. Minden típusnál egy-egy kép is segít elképzelni, milyen is lehet az adott sör – a képek csak illusztrációk.</p>
         <img src="img/beer_types.jpg">
       </div>
     </section>
 
     <section class="features container box">
       <div class="feature-box shadow" onclick="toggleFeature(this)">
-        <h3>Világos sör</h3>
-        <div class="feature-content">
-          <p>Könnyű, frissítő és tökéletes egy nyári délutánra. Gyakran alacsonyabb alkoholtartalmú, világos arany színű.</p>
+        <div style="display: flex; align-items: center; gap: 2rem;">
+          <img src="https://placehold.co/160x160/eee/333?text=Lager" style="border-radius: 10px;">
+          <div>
+            <h3 style="text-align:center;">Világos sör (Lager)</h3>
+            <div class="feature-content">
+              <p>
+                A világos sörök, vagy lager típusok, aranysárga színűek, tiszta, frissítő ízvilággal. Általában alacsonyabb alkoholtartalmúak, habjuk fehér és tartós. Népszerűek a nyári hónapokban, és kiválóan illenek könnyű ételekhez. 
+                <br><br>
+                A lager sörök története a 19. századig nyúlik vissza, amikor a hűtött erjesztés technológiája elterjedt Európában. Ezek a sörök hosszabb ideig, alacsonyabb hőmérsékleten érlelődnek, így lesznek különösen tiszták és üdítőek. A legismertebb lager típusok közé tartozik a pilsner, a helles és a bock. A világos sörök a társasági események, fesztiválok és baráti összejövetelek elengedhetetlen kellékei.
+              </p>
+            </div>
+          </div>
+          <img src="https://placehold.co/160x160/ddd/222?text=Friss" style="border-radius: 10px;">
         </div>
       </div>
 
       <div class="feature-box shadow" onclick="toggleFeature(this)">
-        <h3>Barna sör</h3>
-        <div class="feature-content">
-          <p>Telt íz, karamelles és pörkölt jegyek, sötétebb színvilág. Az ínyencek egyik kedvence, főleg hidegebb időben.</p>
+        <div style="display: flex; align-items: center; gap: 2rem;">
+          <img src="https://placehold.co/160x160/ccbbaa/222?text=Barna" style="border-radius: 10px;">
+          <div>
+            <h3 style="text-align:center;">Barna sör (Brown Ale)</h3>
+            <div class="feature-content">
+              <p>
+                A barna sörök telt, karamelles, pörkölt malátás ízvilágot kínálnak. Színük a borostyántól a sötétbarnáig terjed, habjuk krémes. Gyakran fogyasztják őszi-téli időszakban, jól illik sült húsokhoz, sajtokhoz.
+                <br><br>
+                A brown ale Angliából származik, ahol már a középkorban is főztek hasonló söröket. Ezek a sörök gazdag aromájuknak és enyhén édeskés utóízüknek köszönhetően kiválóan párosíthatók nehezebb ételekkel. A barna sörök között találunk könnyedebb, ivósabb változatokat és erősebb, testesebb típusokat is, mint például a nut brown ale vagy a dark mild.
+              </p>
+            </div>
+          </div>
+          <img src="https://placehold.co/160x160/333/fff?text=Maláta" style="border-radius: 10px;">
         </div>
       </div>
 
       <div class="feature-box shadow" onclick="toggleFeature(this)">
-        <h3>Kézműves sör</h3>
-        <div class="feature-content">
-          <p>Egyedi receptek alapján, kis főzdékben készül. Erőteljesebb, karakteresebb ízek, gyakran kísérletező stílusban.</p>
+        <div style="display: flex; align-items: center; gap: 2rem;">
+          <img src="https://placehold.co/160x160/ffb347/222?text=IPA" style="border-radius: 10px;">
+          <div>
+            <h3 style="text-align:center;">IPA (India Pale Ale)</h3>
+            <div class="feature-content">
+              <p>
+                Az IPA-k erősen komlózott, gyümölcsös, citrusos, néha fenyős aromájú sörök. Az angol gyarmati időkben fejlesztették ki, hogy a hosszú tengeri úton is eltartható legyen. Ma a kézműves sörfőzdék egyik legnépszerűbb típusa.
+                <br><br>
+                Az India Pale Ale eredetileg Angliából származik, és a brit katonák számára főzték, akik Indiában szolgáltak. A magasabb komlótartalom tartósította a sört a hosszú hajóutak során. Napjainkban az IPA-k reneszánszukat élik, különféle változataik léteznek: session, double, New England, west coast IPA. Ezek a sörök intenzív illatukkal és keserűségükkel hódítanak.
+              </p>
+            </div>
+          </div>
+          <img src="https://placehold.co/160x160/ffe4b5/333?text=Komló" style="border-radius: 10px;">
+        </div>
+      </div>
+
+      <div class="feature-box shadow" onclick="toggleFeature(this)">
+        <div style="display: flex; align-items: center; gap: 2rem;">
+          <img src="https://placehold.co/160x160/222/fff?text=Stout" style="border-radius: 10px;">
+          <div>
+            <h3 style="text-align:center;">Stout</h3>
+            <div class="feature-content">
+              <p>
+                A stout sörök sötétek, szinte feketék, erősen pörkölt malátás, kávés, csokoládés jegyekkel. Habjuk sűrű, krémes. Legismertebb képviselőjük a Guinness. Kiváló desszertekhez, csokoládés süteményekhez.
+                <br><br>
+                A stout eredetileg a porter sörök erősebb változata volt, de mára önálló kategóriává nőtte ki magát. Léteznek száraz, édes, zabos, csokoládés és imperial stoutok is. Ezek a sörök különösen népszerűek az Egyesült Királyságban és Írországban, de világszerte sok sörfőzde készít saját változatot.
+              </p>
+            </div>
+          </div>
+          <img src="https://placehold.co/160x160/444/eee?text=Kávé" style="border-radius: 10px;">
+        </div>
+      </div>
+
+      <div class="feature-box shadow" onclick="toggleFeature(this)">
+        <div style="display: flex; align-items: center; gap: 2rem;">
+          <img src="https://placehold.co/160x160/ffeedd/222?text=Búza" style="border-radius: 10px;">
+          <div>
+            <h3 style="text-align:center;">Búzasör (Weissbier)</h3>
+            <div class="feature-content">
+              <p>
+                A búzasörök világosak, enyhén opálosak, frissítő, gyümölcsös, banános, szegfűszeges aromával. Németországban és Belgiumban különösen népszerűek. Jól illenek salátákhoz, halakhoz, könnyű ételekhez.
+                <br><br>
+                A búzasörök legalább 50% búzamalátát tartalmaznak, ami különleges, lágy textúrát és egyedi ízvilágot kölcsönöz nekik. A német hefeweizen és a belga witbier a legismertebb változatok. Ezek a sörök gyakran enyhén élesztős, citrusos, fűszeres jegyekkel rendelkeznek, és kiválóan oltják a szomjat meleg napokon.
+              </p>
+            </div>
+          </div>
+          <img src="https://placehold.co/160x160/fff/aaa?text=Banán" style="border-radius: 10px;">
+        </div>
+      </div>
+
+      <div class="feature-box shadow" onclick="toggleFeature(this)">
+        <div style="display: flex; align-items: center; gap: 2rem;">
+          <img src="https://placehold.co/160x160/ccf/222?text=Kézműves" style="border-radius: 10px;">
+          <div>
+            <h3 style="text-align:center;">Kézműves sör</h3>
+            <div class="feature-content">
+              <p>
+                A kézműves sörök kis főzdékben, kreatív receptekkel készülnek. Lehetnek IPA-k, stoutok, savanyú sörök vagy akár gyümölcsös különlegességek is. A hangsúly az egyediségen, minőségen és a sörfőző szenvedélyén van.
+                <br><br>
+                A craft beer mozgalom az Egyesült Államokból indult, de mára világszerte elterjedt. A kézműves sörfőzők gyakran kísérleteznek új alapanyagokkal, komlófajtákkal, érlelési eljárásokkal. A kézműves sörök között találunk extrém keserű, savanyú, fűszeres vagy akár hordóban érlelt változatokat is, amelyek minden sörkedvelő számára tartogatnak meglepetéseket.
+              </p>
+            </div>
+          </div>
+          <img src="https://placehold.co/160x160/eee/333?text=Kreatív" style="border-radius: 10px;">
+        </div>
+      </div>
+
+      <div class="feature-box shadow" onclick="toggleFeature(this)">
+        <div style="display: flex; align-items: center; gap: 2rem;">
+          <img src="https://placehold.co/160x160/ffcccc/333?text=Gyümölcsös" style="border-radius: 10px;">
+          <div>
+            <h3 style="text-align:center;">Gyümölcsös sör</h3>
+            <div class="feature-content">
+              <p>
+                Ezek a sörök valódi gyümölcsökkel vagy természetes aromákkal készülnek. Ízük lehet édes, savanykás vagy frissítő, színük a felhasznált gyümölcstől függően változik. Különösen népszerűek a nyári hónapokban.
+                <br><br>
+                A gyümölcsös sörök hagyománya főleg Belgiumban és Németországban alakult ki, ahol a lambic és kriek típusok cseresznye, málna vagy más gyümölcs hozzáadásával készülnek. Ezek a sörök kiválóan illenek desszertekhez, gyümölcssalátákhoz, de önmagukban is különleges élményt nyújtanak.
+              </p>
+            </div>
+          </div>
+          <img src="https://placehold.co/160x160/fff/ff69b4?text=Málna" style="border-radius: 10px;">
         </div>
       </div>
     </section>

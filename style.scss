@@ -90,6 +90,10 @@ main {
   }
 }
 
+.hero h1 {
+  cursor: pointer;
+}
+
 .intro, .features {
 
   h2, h3 {
@@ -184,12 +188,29 @@ footer {
   }
 }
 
+.spin-icon {
+  animation: spin 3s linear infinite;
+}
+
+.spin-icon.reverse-spin {
+  animation: spin-reverse 3s linear infinite;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
   }
 }
 
@@ -278,6 +299,28 @@ img {
 
 .spin-icon {
   animation: spin 3s linear infinite;
+}
+
+.spin-icon.reverse-spin {
+  animation: spin-reverse 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 button {
