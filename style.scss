@@ -149,3 +149,70 @@ footer {
   background-color: $white;
   color: $yellow;
 }
+
+.underline {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-family: $titleFont;
+  font-size: 1.2rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $yellow;
+    transition: width 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.feature-box {
+  background-color: $gray;
+  color: $white;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    position: relative;
+  }
+}
+
+.shadow {
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.4); 
+  border-radius: 5px; 
+}
+
+.box {
+  background-color: $brown; 
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: inset 6px 6px 15px rgba(0, 0, 0, 0.5),
+              inset -6px -6px 15px rgba(255, 255, 255, 0.05);
+}
+
+
+.content {
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+
+  section {
+    margin-bottom: 2rem;
+
+    .box {
+      overflow: hidden;
+    }
+  }
+}
