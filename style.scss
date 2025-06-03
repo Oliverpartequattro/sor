@@ -7,7 +7,6 @@ $black: #36454F;
 $titleFont: 'Bebas Neue', sans-serif;
 $textFont: 'Roboto Slab', sans-serif;
 
-// GLOBAL STYLES
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +26,6 @@ body {
   margin: 0 auto;
 }
 
-// SIDEBAR NAVBAR
 .sidebar {
   width: 200px;
   background-color: $yellow;
@@ -59,13 +57,11 @@ body {
           transform: translateX(15px);
           border-radius: 5px;
         }
-       
       }
     }
   }
 }
 
-// MAIN CONTENT
 main {
   margin-left: 200px;
   width: 100%;
@@ -80,6 +76,13 @@ main {
   h1 {
     font-family: $titleFont;
     font-size: 3rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    animation: fade-in 2s ease-in-out;
+
+    &:hover {
+      color: $yellow;
+      transform: scale(1.1);
+    }
   }
 
   p {
@@ -92,6 +95,12 @@ main {
   h2, h3 {
     font-family: $titleFont;
     color: $green;
+    transition: color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      color: $yellow;
+      transform: scale(1.1);
+    }
   }
 
   p {
@@ -106,7 +115,37 @@ main {
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 5px;
-  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    position: relative;
+
+    h3 {
+      color: $yellow;
+      transform: scale(1.1);
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+  }
+
+  img {
+    margin-top: 1rem;
+    max-width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+.index-page .feature-box:hover h3 {
+  color: transparent;
+  transition: color 0.3s ease;
 }
 
 footer {
@@ -116,8 +155,8 @@ footer {
   padding: 1rem;
 }
 
-.homeIcon:hover{
-    background-color: $yellow;
+.homeIcon:hover {
+  background-color: $yellow;
 }
 
 .homeIcon {
@@ -173,35 +212,18 @@ footer {
   }
 }
 
-.feature-box {
-  background-color: $gray;
-  color: $white;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 5px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    z-index: 10;
-    position: relative;
-  }
-}
-
 .shadow {
-  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.4); 
-  border-radius: 5px; 
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
 }
 
 .box {
-  background-color: $brown; 
+  background-color: $brown;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: inset 6px 6px 15px rgba(0, 0, 0, 0.5),
               inset -6px -6px 15px rgba(255, 255, 255, 0.05);
 }
-
 
 .content {
   margin: 0 auto;
@@ -225,6 +247,73 @@ footer {
 }
 
 .feature-content.open {
-  max-height: 300px; 
+  max-height: 300px;
   padding: 1rem 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.spin-icon {
+  animation: spin 3s linear infinite;
+}
+
+button {
+  background-color: $yellow;
+  color: $brown;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    background-color: $white;
+    box-shadow: 0 0 10px $yellow, 0 0 20px $yellow;
+    transform: scale(1.1);
+  }
+}
+
+.glow {
+  text-shadow: 0 0 10px $yellow, 0 0 20px $yellow, 0 0 30px $yellow;
+  transition: text-shadow 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    text-shadow: 0 0 20px $yellow, 0 0 40px $yellow, 0 0 60px $yellow;
+    transform: scale(1.1);
+  }
+}
+
+.spin-text {
+  display: inline-block;
+  animation: spin-text 5s linear infinite;
+}
+
+@keyframes spin-text {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

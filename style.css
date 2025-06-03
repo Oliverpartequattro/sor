@@ -63,6 +63,12 @@ main {
 .hero h1 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 3rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  animation: fade-in 2s ease-in-out;
+}
+.hero h1:hover {
+  color: #f8c537;
+  transform: scale(1.1);
 }
 .hero p {
   font-size: 1.2rem;
@@ -71,6 +77,11 @@ main {
 .intro h2, .intro h3, .features h2, .features h3 {
   font-family: "Bebas Neue", sans-serif;
   color: #339b67;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.intro h2:hover, .intro h3:hover, .features h2:hover, .features h3:hover {
+  color: #f8c537;
+  transform: scale(1.1);
 }
 .intro p, .features p {
   font-size: 1rem;
@@ -83,7 +94,33 @@ main {
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 5px;
-  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  position: relative;
+}
+.feature-box:hover h3 {
+  color: #f8c537;
+  transform: scale(1.1);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.feature-box img {
+  margin-top: 1rem;
+  max-width: 100%;
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature-box img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.index-page .feature-box:hover h3 {
+  color: transparent;
+  transition: color 0.3s ease;
 }
 
 footer {
@@ -144,21 +181,6 @@ footer {
   width: 100%;
 }
 
-.feature-box {
-  background-color: #53567c;
-  color: #E3F2FD;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 5px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.feature-box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  z-index: 10;
-  position: relative;
-}
-
 .shadow {
   box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
@@ -193,6 +215,69 @@ footer {
 .feature-content.open {
   max-height: 300px;
   padding: 1rem 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.spin-icon {
+  animation: spin 3s linear infinite;
+}
+
+button {
+  background-color: #f8c537;
+  color: #49393B;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+button:hover {
+  background-color: #E3F2FD;
+  box-shadow: 0 0 10px #f8c537, 0 0 20px #f8c537;
+  transform: scale(1.1);
+}
+
+.glow {
+  text-shadow: 0 0 10px #f8c537, 0 0 20px #f8c537, 0 0 30px #f8c537;
+  transition: text-shadow 0.3s ease, transform 0.3s ease;
+}
+.glow:hover {
+  text-shadow: 0 0 20px #f8c537, 0 0 40px #f8c537, 0 0 60px #f8c537;
+  transform: scale(1.1);
+}
+
+.spin-text {
+  display: inline-block;
+  animation: spin-text 5s linear infinite;
+}
+
+@keyframes spin-text {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
