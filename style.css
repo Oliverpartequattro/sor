@@ -26,7 +26,6 @@ body {
   left: 0;
   top: 0;
   padding-top: 2rem;
-  box-shadow: 4px 0 16px rgba(0, 0, 0, 0.18), 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 .sidebar ul {
   list-style: none;
@@ -576,9 +575,6 @@ button:hover {
   .kultura-feature-title {
     text-align: center;
   }
-}
-body, h1, h2, h3, h4, h5, h6, p, span, label, li, a, .feature-content, .brewing-step-title, .brewing-step-text, .kultura-feature-title, .kultura-feature-text {
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 /*# sourceMappingURL=style.css.map */
