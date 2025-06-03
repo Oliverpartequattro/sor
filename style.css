@@ -68,9 +68,6 @@ main {
   font-size: 1.2rem;
 }
 
-.intro, .features {
-  margin: 2rem 0;
-}
 .intro h2, .intro h3, .features h2, .features h3 {
   font-family: "Bebas Neue", sans-serif;
   color: #339b67;
@@ -86,6 +83,7 @@ main {
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 footer {
@@ -183,6 +181,18 @@ footer {
 }
 .content section .box {
   overflow: hidden;
+}
+
+.feature-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.3s;
+  padding: 0 0;
+}
+
+.feature-content.open {
+  max-height: 300px;
+  padding: 1rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

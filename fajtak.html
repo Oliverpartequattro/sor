@@ -1,21 +1,74 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sör - Az élet itala</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sörfajták</title>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="img/beer.png">
 </head>
 <body>
-    <nav class="sidebar">
-        <ul>
-          <li class="homeIcon"><a href="index.html"> <img  src="img/beer.png" alt=""></a></li>
-          <li class="chosen"><a href="fajtak.html">Fajták</a></li>
-          <li><a href="fozes.html">Főzés</a></li>
-          <li><a href="kultura.html">Kultúra</a></li>
-          <li><a href="kviz.html">Kvíz</a></li>
-        </ul>
-      </nav>
+  <nav class="sidebar shadow">
+    <ul>
+      <li class="homeIcon"><a href="index.html"> <img src="img/beer.png" alt=""></a></li>
+      <li class="chosen"><a href="fajtak.html">Fajták</a></li>
+      <li><a href="fozes.html">Főzés</a></li>
+      <li><a href="kultura.html">Kultúra</a></li>
+      <li><a href="kviz.html">Kvíz</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero shadow">
+    <div class="container">
+      <h1 class="underline">Sörfajták</h1>
+      <p>Fedezd fel a sörök sokszínű világát!</p>
+    </div>
+  </header>
+
+  <div class="content shadow">
+    <section class="intro">
+      <div class="container box">
+        <h2 class="underline">Különböző típusok</h2>
+        <p>A sörök világa gazdag és változatos. Az alábbiakban néhány fontos fajtát ismerhetsz meg – kattints a címekre a részletekért!</p>
+      </div>
+    </section>
+
+    <section class="features container box">
+      <div class="feature-box shadow">
+        <h3 onclick="toggleFeature(this)">Világos sör</h3>
+        <div class="feature-content">
+          <p>Könnyű, frissítő és tökéletes egy nyári délutánra. Gyakran alacsonyabb alkoholtartalmú, világos arany színű.</p>
+        </div>
+      </div>
+
+      <div class="feature-box shadow">
+        <h3 onclick="toggleFeature(this)">Barna sör</h3>
+        <div class="feature-content">
+          <p>Telt íz, karamelles és pörkölt jegyek, sötétebb színvilág. Az ínyencek egyik kedvence, főleg hidegebb időben.</p>
+        </div>
+      </div>
+
+      <div class="feature-box shadow">
+        <h3 onclick="toggleFeature(this)">Kézműves sör</h3>
+        <div class="feature-content">
+          <p>Egyedi receptek alapján, kis főzdékben készül. Erőteljesebb, karakteresebb ízek, gyakran kísérletező stílusban.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container shadow">
+      <p>&copy; 2025 Sör Info. Minden jog fenntartva.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleFeature(header) {
+      const content = header.nextElementSibling;
+      content.classList.toggle('open');
+    }
+  </script>
 </body>
 </html>

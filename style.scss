@@ -88,7 +88,6 @@ main {
 }
 
 .intro, .features {
-  margin: 2rem 0;
 
   h2, h3 {
     font-family: $titleFont;
@@ -107,6 +106,7 @@ main {
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 footer {
@@ -215,4 +215,16 @@ footer {
       overflow: hidden;
     }
   }
+}
+
+.feature-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.3s;
+  padding: 0 0;
+}
+
+.feature-content.open {
+  max-height: 300px; 
+  padding: 1rem 0;
 }
