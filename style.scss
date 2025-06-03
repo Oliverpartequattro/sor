@@ -125,12 +125,13 @@ footer {
     margin-left: 50px;
     width: 80px;
     height: 80px;
-    background-color: $yellow;
+    background-color: rgba(255, 255, 255, 0);
     animation: spin 2s linear infinite;
 
     &:hover {
       cursor: pointer;
       transform: scale(1.2);
+      background-color: rgba(255, 255, 255, 0);
     }
   }
 }
