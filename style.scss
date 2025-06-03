@@ -64,6 +64,31 @@ body {
   }
 }
 
+.sidebar-beerspin-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.2em;
+  margin-bottom: 0.7em;
+  margin-top: auto;
+  padding-bottom: 0.5em;
+  min-height: 48px;
+}
+.sidebar-beerspin {
+  width: 28px;
+  height: 28px;
+  margin: 0 2px;
+  animation: spin 2.2s linear infinite;
+  filter: drop-shadow(0 0 4px #f8c53788);
+}
+.sidebar-beerspin:nth-child(2) { animation-delay: 0.2s; }
+.sidebar-beerspin:nth-child(3) { animation-delay: 0.4s; }
+.sidebar-beerspin:nth-child(4) { animation-delay: 0.6s; }
+.sidebar-beerspin:nth-child(5) { animation-delay: 0.8s; }
+.sidebar-beerspin:nth-child(6) { animation-delay: 1.0s; }
+.sidebar-beerspin:nth-child(7) { animation-delay: 1.2s; }
+.sidebar-beerspin:nth-child(8) { animation-delay: 1.4s; }
 main {
   margin-left: 200px;
   width: 100%;
